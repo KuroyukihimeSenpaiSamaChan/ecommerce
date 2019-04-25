@@ -5,6 +5,7 @@
     <div class="container">
         <h1 class="jumbotron-heading">{{ $product->name }}</h1>
         <p class="lead text-muted">{{ $product->description }}</p>
+        <add-to-cart :product_id="{{ $product->id }}"></add-to-cart>
     </div>
 </section>
 <div class="bg-light">

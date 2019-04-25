@@ -17,3 +17,4 @@ Route::get('/about', 'PageController@about');
 Route::resource('contacts', 'ContactsController');
 
 Route::get('/product/{id}/{slug?}', 'ProductController@view');
+Route::post('/cart/add/{id}', 'CartController@add');
